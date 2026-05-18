@@ -1,0 +1,53 @@
+{
+  "input_datatypes": [
+    {
+      "name": "bastionhost",
+      "label": "Bastion Data"
+    }
+  ],
+  "output_datatypes": [
+    {
+      "name": "bastionhost",
+      "label": "Bastion Data"
+    }
+  ],
+  "input_groups": [
+    {
+      "name": "text_input",
+      "label": "Text Input Configuration"
+    }
+  ],
+  "output_groups": [
+    {
+      "name": "text_output",
+      "label": "Text Output Results"
+    }
+  ],
+  "template_input_params": [
+    {
+      "name": "large_text_input",
+      "label": "Large Text Input",
+      "description": "Large text data that will be concatenated 3 times",
+      "type": "string",
+      "default": "",
+      "hidden": false,
+      "immutable": false,
+      "required": false,
+      "secured": false,
+      "group_name": "text_input",
+      "regex": ".*",
+      "regexdesc": "Any text input is allowed"
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "concatenated_output",
+      "label": "Concatenated Output",
+      "description": "The input text concatenated 3 times",
+      "type": "string",
+      "hidden": false,
+      "secured": false,
+      "group_name": "text_output"
+    }
+  ]
+}
