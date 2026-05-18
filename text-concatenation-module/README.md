@@ -37,8 +37,9 @@ This Terraform template accepts large text data as input and concatenates it 3 t
 
 1. Fill in the **Large Text Input** field with your text
 2. Click **Deploy**
-3. After deployment, view the output:
+3. After deployment, view the outputs:
    - **Concatenated Output** - Shows the input text concatenated 3 times
+   - **Output File Content** - Shows the same content read from hello.txt file
 
 ## CAM Variables Configuration
 
@@ -53,6 +54,9 @@ The `camvariables.json` file defines:
 
 ### Output Parameters
 - **concatenated_output**: The concatenated result
+  - Group: Text Output Results
+  - Type: String
+- **outfile**: Content read from hello.txt file
   - Group: Text Output Results
   - Type: String
 
@@ -106,6 +110,7 @@ terraform apply -var='large_text_input=Your text here'
 | Name | Description |
 |------|-------------|
 | concatenated_output | The input text concatenated 3 times |
+| outfile | Content read from hello.txt file (same as concatenated_output) |
 
 ## Example
 

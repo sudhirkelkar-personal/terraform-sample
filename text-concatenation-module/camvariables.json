@@ -48,6 +48,15 @@
       "hidden": false,
       "secured": false,
       "group_name": "text_output"
+    },
+    {
+      "name": "outfile",
+      "label": "Output File Content",
+      "description": "Content read from hello.txt file",
+      "type": "string",
+      "hidden": false,
+      "secured": false,
+      "group_name": "text_output"
     }
   ]
 }
