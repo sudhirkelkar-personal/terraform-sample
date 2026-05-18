@@ -1,0 +1,11 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and provide your large text input
+
+large_text_input = <<-EOT
+This is a sample large text input.
+You can replace this with any large text data.
+The text will be concatenated 3 times in the output.
+
+Add as much text as needed here.
+Multiple lines are supported.
+EOT
